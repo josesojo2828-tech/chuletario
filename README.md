@@ -8,7 +8,7 @@
 
 ## 📚 Índice de chulets
 
-| Chulet | Tecnología | Versión de referencia | Qué te resolvés |
+| Chulet | Tecnología | Versión de referencia | Qué te resuelve |
 |--------|-----------|------------------------|-----------------|
 | [Node.js](./nodejs/README.md) | JavaScript en el backend | 24 LTS (Krypton) | `npm`, módulos ESM/CJS, `package.json`, scripts, depuración |
 | [Python](./python/README.md) | Python | 3.13+ (3.15 estable) | venv, `pip`, tipos, `pathlib`, async, debugging |
@@ -32,7 +32,7 @@ Cada carpeta es autocontenida: `README.md` es el chulet. No hay build, ni depend
 
 ### Convención de los chulets
 
-Todos los chulets siguen la misma estructura para que puedas saltar directo a lo que buscás:
+Todos los chulets siguen la misma estructura para que puedas saltar directo a lo que buscas:
 
 ```
 1. TL;DR              — el resumen en 3 líneas
@@ -51,10 +51,10 @@ Todos los chulets siguen la misma estructura para que puedas saltar directo a lo
 
 Este repo es de estudiantes y para estudiantes. Si algo está mal, desactualizado o falta:
 
-1. Editá el `README.md` de la carpeta correspondiente.
-2. Guardá el cambio en una rama: `git checkout -b fix/chulet-python`.
+1. Edita el `README.md` de la carpeta correspondiente.
+2. Guarda el cambio en una rama: `git checkout -b fix/chulet-python`.
 3. Commit con mensaje en formato convencional: `fix(python): corregir ejemplo de venv`.
-4. Abrí un Pull Request describiendo qué estaba mal.
+4. Abre un Pull Request describiendo qué estaba mal.
 
 **Reglas de estilo para los chulets:**
 
@@ -63,7 +63,7 @@ Este repo es de estudiantes y para estudiantes. Si algo está mal, desactualizad
 - Todo bloque de código lleva su lenguaje (` ```bash `, ` ```python `).
 - Todo ejemplo lleva su salida esperada.
 - Nada de "simplemente haz X". Explica el porqué cuando la decisión sea contraintuitiva.
-- Si algo depende de una versión, pineala.
+- Si algo depende de una versión, indícala.
 
 ---
 
