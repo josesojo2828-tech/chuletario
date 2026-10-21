@@ -2,7 +2,7 @@
 
 > Cheatsheets de referencia rápida para estudiantes: lo que necesitas copy-pastear sin bucear 200 páginas de documentación.
 
-**TL;DR:** Siete chulets, uno por tecnología. Cada uno tiene comandos listos para copiar, ejemplos que se ejecutan, y una sección de errores comunes que te vas a encontrar. Empieza por el que necesitas y sigue.
+**TL;DR:** Ocho chulets, uno por tecnología. Cada uno tiene comandos listos para copiar, ejemplos que se ejecutan, y una sección de errores comunes que te vas a encontrar. Empieza por el que necesitas y sigue.
 
 ---
 
@@ -10,6 +10,7 @@
 
 | Chulet | Tecnología | Versión de referencia | Qué te resuelve |
 |--------|-----------|------------------------|-----------------|
+| [JavaScript](./javascript/README.md) | JavaScript (el lenguaje) | ES2026 (17.ª edición) | variables, tipos, funciones, `this`, clases, async, DOM |
 | [Node.js](./nodejs/README.md) | JavaScript en el backend | 24 LTS (Krypton) | `npm`, módulos ESM/CJS, `package.json`, scripts, depuración |
 | [Python](./python/README.md) | Python | 3.13+ (3.15 estable) | venv, `pip`, tipos, `pathlib`, async, debugging |
 | [Go](./go/README.md) | Go | 1.27 | `go mod`, goroutines, channels, interfaces, `go vet` |
@@ -73,6 +74,7 @@ Verificadas el **21 de octubre de 2026**:
 
 | Herramienta | Versión | Nota |
 |-------------|----------|------|
+| JavaScript | ES2026 (17.ª edición, junio 2026) | La edición publicada actual. ES2027 trae `Temporal` y `using` |
 | Node.js | `v24.22.1` (LTS "Krypton") | La LTS actual. `v26.12.1` es "Current" (no LTS) |
 | Python | `3.15.1` | `3.13` y `3.12` en soporte de seguridad |
 | Go | `go1.27.3` | |

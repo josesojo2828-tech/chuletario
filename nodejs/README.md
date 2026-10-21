@@ -2,9 +2,9 @@
 
 > Todo lo que necesitas para trabajar con Node.js en el día a día, en una sola página.
 
-**TL;DR:** Node.js corre JavaScript fuera del navegador. Usá `npm` para dependencias, ESM (`import`) para módulos nuevos, `process.env` para configuración, y `node --watch` para no reiniciar el server a mano. La LTS actual es **v24.22.1** ("Krypton").
+**TL;DR:** Node.js corre JavaScript fuera del navegador. Usa `npm` para dependencias, ESM (`import`) para módulos nuevos, `process.env` para configuración, y `node --watch` para no reiniciar el server a mano. La LTS actual es **v24.22.1** ("Krypton").
 
-**Audiencia:** Este chulet asume que ya sabes JavaScript (funciones, `async/await`, `Promise`). Si no, empieza por el [chulet de HTML](./../html/README.md) y vuelve.
+**Audiencia:** Este chulet asume que ya sabes JavaScript (funciones, `async/await`, `Promise`). Si no, empieza por el [chulet de JavaScript](./../javascript/README.md), que cubre el lenguaje completo. El runtime y las herramientas de Node están aquí; el lenguaje (variables, tipos, funciones, `this`) está en el chulet de JavaScript.
 
 ---
 
@@ -162,7 +162,7 @@ const port = Number(process.env.PORT ?? 3000);
 node --env-file=.env src/index.js
 ```
 
-> `.env` nunca va al repo. Sumá `.env` a `.gitignore` y versioná `.env.example` con las claves vacías.
+> `.env` nunca va al repo. Suma `.env` a `.gitignore` y versiona `.env.example` con las claves vacías.
 
 ### Scriptstypical de `package.json`
 
@@ -298,13 +298,13 @@ Salida:
 
 | Gotcha | Qué pasa | Solución |
 |--------|----------|----------|
-| `require` en un proyecto ESM | `ReferenceError: require is not defined` | Usá `import`, o `createRequire(import.meta.url)` |
+| `require` en un proyecto ESM | `ReferenceError: require is not defined` | Usa `import`, o `createRequire(import.meta.url)` |
 | Olvidar la extensión en el import | `ERR_MODULE_NOT_FOUND` | En ESM el path es explícito: `./utils.js` |
 | `node_modules` commiteado | Repo gigante e inseguro | `.gitignore` con `node_modules/` |
 | `npm install` en vez de `npm ci` en CI | Instala versiones distintas al lock | `npm ci` en CI, siempre |
 | Sin `catch` en un `await` | Unhandled rejection tumba el proceso | `try/catch` o `.catch()` |
 | `process.env.PORT` sin validar | `NaN` si viene string raro | `Number(process.env.PORT ?? 3000)` |
-| `console.log` en producción | Fuga de datos / ruido | Usá un logger con niveles |
+| `console.log` en producción | Fuga de datos / ruido | Usa un logger con niveles |
 | Confundir `null` con `undefined` | Bugs silenciosos | `??` en vez de `\|\|` para defaults |
 
 ---
